@@ -20,10 +20,11 @@
     <h3>Using Label and progress tag </h3>
     <label for="file">Downloading Progress</label>
     <!-- if we remove the value attribute, then toggle will move -->
-    <progress id="file" value="80" max="100">
+    <progress id="file" value="80" max="100"> 32%
          <!-- <p>hello</p>
          <h1>hlo</h1> -->
     </progress>
+    <!-- inner text will show only when the interbet speed is slow otherwise it will be hidden -->
     <!-- progress tag ke beech ka content nahi show hota hai,why? -->
     <br>
     <br>
@@ -35,7 +36,19 @@
     <form action="welcome.html" method="get">
         <label for="password">Password</label>
     <input type="password" name="12334" id="password">
+
+    <p>male 
+    <input type="radio" name="gender" value="male">
+    </p>
+    <p>female 
+        <input type="radio" name="gender" value="female">
+    </p>
+    <p>Courses for enroll: </p>
+    Java<input type="checkbox">
+    C++<input type="checkbox">
+    Python<input type="checkbox">
     <button type="submit">Submit</button>
+
     </form>
     
 </body>
