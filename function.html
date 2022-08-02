@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick(){
+            // document.getElementById("p1").innerHTML=Boolean(10>9);
+            // var n1="A";
+            // var n2="6";
+            // n1=Number(n1);
+            // n2=Number(n2);
+            // var n1=document.getElementById("n1").value;
+            // var n2=document.getElementById("n2").value;
+            // if(!isNaN(n1) && !isNaN(n2)){
+            //     n1=Number(n1);
+            //     n2=Number(n2);
+            //     document.getElementById("p1").innerHTML=n1+n2;
+            // }
+            // else{
+            //     document.getElementById("p1").innerHTML="<span style='color:red'> Please enter numeric value.</span>";
+
+            // }
+            // var n1=document.getElementById("n1").innerHTML="n1 + n2 "+ n1+n2;
+            // // alert("Hi, How are you?");
+            // var n2=document.getElementById("n2").innerHTML="hello";
+        }
+        function func(){
+            let n1=document.getElementById("n1").value;
+            if(n1%2==0){
+                document.getElementById("p2").innerHTML= "n1= "+n1 +" is an even number => "+ Boolean(true);
+            }
+            else{
+                document.getElementById("p2").innerHTML= "n1= "+n1 +" is odd number => "+ Boolean(false);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- N1 <input type="text" name="n1" id="n1"/> -->
+    <br>
+    <br>
+    <!-- N2 <input type="text" name="n1" id="n2" />
+    <br> -->
+    <button onclick="fnClick()">Click</button>
+    <p id="p1"></p>
+
+    N1 <input type="text" name="n1" id="n1"/>
+    <button onclick="func()">Check Even Odd</button>
+    <p id="p2"></p>
+    <!-- <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p> -->
+</body>
+</html>

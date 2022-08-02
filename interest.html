@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting of JS</title>
+</head>
+<body>
+    <P id="demo">
+        <p id="2demo"></p>
+    </P>nb
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+     
+    <script>
+        var price1=60;
+        var price2=70;
+        var totalPrice=price1+price2;
+        var n=5+5;
+        console.log(totalPrice);
+        console.log(n);
+        document.getElementById("demo").innerHTML="Total Price is: " + totalPrice;
+        document.getElementById("2demo").innerHTML="Value of n: " + n;
+
+        // key:"value" pair
+        let person={   
+            firstName:"Akitir",
+            lastName:"Revorg",
+            age:"50",
+            eyeColor:"Brown",
+        }
+        document.getElementById("demo3").innerHTML=person.firstName+" "+person.lastName+", Age is: "+person.age;
+
+        //next concept
+        var n =Number("123");
+        n=n+2;
+        var s="2";
+        s=n+s;
+        document.getElementById("demo4").innerHTML="n(123 +2)= " +n+", s(n + s)= "+s;
+
+        var pi=3.14;
+        var r= 10;
+        var area=pi*r*r;
+        document.getElementById("demo5").innerHTML="Area of circle: "+ area;
+    </script>
+</body>
+</html>

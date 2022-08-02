@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ques(){
+            let total_balls=document.getElementById("balls").value;
+            let total_members=document.getElementById("members").value;
+
+            var ans=total_balls/total_members;
+            document.getElementById("ques1").innerHTML=total_balls+" balls are distributed among "+total_members+ " members "+ ", they will get "+ ans +" each!";
+
+        }
+    </script>
+</head>
+<body>
+    <!-- Ques: Mr john wants to create a program that equally distributes the total balls to the team members. The program must ensure that total balls must be together than or equal to team members. -->
+    <input type="number" name="total balls" id="balls">
+    <input type="number" name="total members" id="members">
+    <p id="ques1"></p>
+    <button onclick="ques()">Distribute Equally</button>
+
+</body>
+</html>
