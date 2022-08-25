@@ -1,0 +1,54 @@
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/229/984/original/vector-grunge-texture-background.jpg");
+    color:white;
+}
+h1{
+    /* color: white; */
+    text-align: center;
+}
+ 
+input{
+    height: 1.8rem;
+    width: 25rem;
+    border: 2px  solid black;
+    color: rgb(222, 64, 7);
+    text-align: center;
+    margin: auto;
+    display: block;
+     
+}
+button{
+    height: 3rem;
+    width: 12rem;
+    font-size: medium;
+    background-color: rgb(233, 83, 8);
+    border: 2px  solid black;
+    color: white;
+    border-radius: 1rem;
+    border: 1px rgb(138, 135, 135);
+    margin: auto;
+    display: block; 
+}
+#container{
+    text-align: center;
+}
+#first_div{
+    display: flex;
+    justify-content: center;
+}
+#square{
+    height: 0px;
+    width:0px;
+    border-radius: 0px;
+    background-image: radial-gradient(circle,rgb(202, 214, 65), rgb(235, 203, 18) ,rgb(202, 214, 65) , rgb(223, 120, 77) ,rgb(216, 94, 41));
+    position: relative;
+    animation: explore;
+    animation-duration: 2s;
+    display:none;
+    transition: all 2s ease-out;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes explore {
+    from {height: 0px;width: 0px;border-radius: 0px;}
+    to{height: 100px;width: 100px;border-radius: 10px;}
+}

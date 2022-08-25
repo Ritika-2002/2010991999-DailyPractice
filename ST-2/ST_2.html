@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/javascript" src="ST_2.js"></script> -->
+    <link rel="stylesheet" href="ST_2.css">
+    <script>
+        function countDigits(n){
+            let count=0;
+            while(n!=0){
+                n=Math.floor(n/10);
+                ++count;
+            }
+            return count;
+        }
+        function sum_of_digits(n){
+            var sum=0;
+            while(n!=0){
+                sum=sum+n%10;
+                n=parseInt(n/10)
+            }
+            return sum;
+        }
+        function st2_func(){
+            let n=document.getElementById("5_digit").value;
+
+            if(countDigits(n)!=5){
+                document.getElementById("ST_2").innerHTML="enter valid number of digits!";
+            }
+            else{
+                var sum=sum_of_digits(n);
+                // document.getElementById("ST_2").innerHTML="sum of digits: "+sum;
+
+                var avg=sum/5;
+                document.getElementById("div1").innerHTML="Height of DIV: "+sum+"px";
+                document.getElementById("div2").innerHTML="Width of DIV: "+sum+"px";
+                document.getElementById("div3").innerHTML="Border_Radius: "+avg+"px";
+                var ans=5*sum+"px";
+                var average=5*avg+"px";
+
+                var square=document.getElementById("square");
+                square.style.height=ans;
+                square.style.width=ans;
+                square.style.borderRadius=average;
+                square.style.position='relative';
+                square.style.display='flex';
+            }
+            
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter a number to create a square shape</h1>
+    <div id="container"> 
+    <input type="number" name="total digit 5" id="5_digit">
+    <p id="ST_2"></p>
+    <button onclick="st2_func()">Let's create a div</button>
+    <br>
+    <br>
+    <p id="div1"></p>
+    <p id="div2"></p>
+    <p id="div3"></p>
+    </div>
+    
+    <div id="first_div">
+        <div id="square" ></div>
+    </div>
+     
+    
+</body>
+</html>
